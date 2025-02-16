@@ -230,6 +230,7 @@ header {
 .management-container-content {
     margin-right: 84px;
     padding-top: 41px;
+    padding-bottom: 41px;
 }
 
 .management-title-small {
@@ -242,6 +243,82 @@ header {
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 25px;
+}
+
+.management-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    margin-bottom: 30px;
+}
+
+.management-list-item:not(:last-child) {
+    margin-bottom: 25px;
+}
+.management-list-item-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 162%;
+    margin-bottom: 12px;
+}
+
+.management-list-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+}
+
+.process-container {
+    max-width: 916px;
+}
+
+.process-title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.process-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 542px;
+    margin: 0 auto;
+}
+
+.process-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 100px;
+    margin-top: 40px;
+}
+
+.process-list-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: calc((100% - 100px) / 2);
+}
+
+.process-image {
+    width: 98px;
+}
+
+.process-item-text {
+    box-sizing: border-box;
+    padding: 14px 19px 12.1px 20px;
+    fill: #fff;
+    box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #2f281e;
+    max-height: 50px;
 }
 
 .price {

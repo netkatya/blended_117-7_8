@@ -203,31 +203,33 @@
           height="500"
         />
       </section>
-      <section>
-        <h2>Quick & Easy Process</h2>
-        <p>
+      <section class="process">
+        <div class="container process-container">
+          <h2 class="process-title">Quick & Easy Process</h2>
+          <p class="process-text">
           Do you require some help for your project: Conception workshop,
           prototyping, marketing strategy, landing page, Ux/UI?
         </p>
-        <ul>
-          <li>
-            <img src="./images/avatar_1.png" alt="Avatar_1" width="98" />
-            <p>I can take care of your pitch</p>
+        <ul class="process-list">
+          <li class="process-list-item">
+            <img src="./images/avatar_1.png" alt="Avatar_1" class="process-image" />
+            <p class="process-item-text">I can take care of your pitch</p>
           </li>
-          <li>
-            <p>I can take care of your pitch</p>
-            <img src="./images/avatar_2.png" alt="Avatar_2" width="98" />
+          <li class="process-list-item">
+            <p class="process-item-text">I can take care of your pitch</p>
+            <img src="./images/avatar_2.png" alt="Avatar_2" class="process-image" />
           </li>
-          <li>
-            <p>I can prototype your app</p>
-            <img src="./images/avatar_3.png" alt="Avatar_3" width="98" />
+          <li class="process-list-item">
+            <p class="process-item-text">I can prototype your app</p>
+            <img src="./images/avatar_3.png" alt="Avatar_3" class="process-image" />
           </li>
-          <li>
-            <img src="./images/avatar_4.png" alt="Avatar_4" width="98" />
-            <p>I can help marketing strategy</p>
+          <li class="process-list-item">
+            <img src="./images/avatar_4.png" alt="Avatar_4" class="process-image" />
+            <p class="process-item-text">I can help marketing strategy</p>
           </li>
         </ul>
-        <button type="button">Contact our expert</button>
+        <button type="button" class="process-button">Contact our expert</button>
+        </div> 
       </section>
       <section>
         <h2>Contents Strategies</h2>
@@ -268,6 +270,7 @@
           </li>
         </ul>
       </section>
+      <!--price section-->
       <section class="price">
         <div class="container">
           <h2 class="price-title">Price Table</h2>
@@ -300,9 +303,11 @@
             <li class="price-item">
               <h3 class="price-item-title">Standard</h3>
               <p class="price-item-text">Brief price description</p>
-              <h4 class="price-item-number">5</h4>
-              <p class="price-item-currency">$</p>
-              <p class="price-item-term">Per / month</p>
+              <div class="price-item-inner"><h4 class="price-item-number">5</h4>
+                <div class="price-item-content"><p class="price-item-currency">$</p>
+                <p class="price-item-term">Per / month</p>
+                </div>
+              </div>
               <ul class="price-inner">
                 <li class="inner-item">
                   <h5 class="inner-item-title">5+ Operators</h5>
@@ -320,9 +325,13 @@
             <li class="price-item">
               <h3 class="price-item-title">Premium</h3>
               <p class="price-item-text">Brief price description</p>
-              <h4 class="price-item-number">10</h4>
-              <p class="price-item-currency">$</p>
-              <p class="price-item-term">Per / month</p>
+              <div class="price-item-inner">
+                <h4 class="price-item-number">10</h4>
+                <div class="price-item-content">
+                  <p class="price-item-currency">$</p>
+                  <p class="price-item-term">Per / month</p>
+                </div>
+              </div>
               <ul class="price-inner">
                 <li class="inner-item">
                   <h5 class="inner-item-title">10+ Operators</h5>
