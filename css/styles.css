@@ -242,6 +242,7 @@ header {
 
 .customer-support-info {
     padding: 41px 0 40px 0;
+    max-width: 450.77px;
 }
 
 .customer-support-title-small {
@@ -275,11 +276,43 @@ header {
     margin-bottom: 25px;
 }
 
-.tick {
-    width: 35px;
+
+
+.tick-orange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 35px;
     height: 35px;
-    fill: #FF9900;
+    border-radius: 13.85px;
     margin-right: 30px;
+    background-color: #FF9900;
+}
+
+.tick-red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 35px;
+    height: 35px;
+    border-radius: 13.85px;
+    margin-right: 30px;
+    background-color: #F03E3D;
+}
+
+.tick-blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 35px;
+    height: 35px;
+    border-radius: 13.85px;
+    margin-right: 30px;
+    background-color: #4D8DFF;
+}
+
+.tick {
+    fill: #ffffff;
 }
 
 .customer-support-list-item-text {
