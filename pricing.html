@@ -17,7 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/pricing.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -34,7 +35,7 @@
             <li class="nav-header-list-item">
               <a href="./index.html">Product</a>
             </li>
-            <li class="nav-header-list-item">
+            <li class="nav-header-list-item current">
               <a href="./pricing.html">Pricing</a>
             </li>
             <li class="nav-header-list-item">
@@ -54,64 +55,88 @@
       </div>
     </header>
     <main>
-      <section>
-        <h3>PRICING</h3>
-        <h1>Let’s get some real work done here.</h1>
-        <p>
-          Prodict is your perfect solution for working. Get started now for free
-        </p>
-        <ul>
-          <li>
-            <h3>Free</h3>
-            <p>Brief price description</p>
-            <h4>0</h4>
-            <p>$</p>
-            <p>Per</p>
-            <p>month</p>
-            <ul>
-              <li>
-                <h5>Only 2 Operators</h5>
-                <h5>Notifications</h5>
-                <h5>Landing Pages</h5>
-              </li>
-            </ul>
-            <button type="button">Order Now</button>
-          </li>
+      <section class="price">
+        <h3 class="pricing-title">Pricing</h3>
+        <div class="container">
+          <h2 class="price-title">Let’s get some real work done here.</h2>
+          <p class="price-text">
+            Prodict is your perfect solution for working. Get started now for
+            free
+          </p>
+          <ul class="price-list">
+            <li class="price-item">
+              <h3 class="price-item-title">Free</h3>
+              <p class="price-item-text">Brief price description</p>
+              <div class="price-item-inner">
+                <h4 class="price-item-number">0</h4>
+                <div class="price-item-content">
+                  <p class="price-item-currency">$</p>
+                  <p class="price-item-term">Per / month</p>
+                </div>
+              </div>
+              <ul class="price-inner">
+                <li class="inner-item">
+                  <h5 class="inner-item-title">Only 2 Operators</h5>
+                </li>
+                <li class="inner-item">
+                  <h5 class="inner-item-title">Notifications</h5>
+                </li>
+                <li class="inner-item">
+                  <h5 class="inner-item-title">Landing Pages</h5>
+                </li>
+              </ul>
+              <button type="button" class="price-item-button">Order Now</button>
+            </li>
 
-          <li>
-            <h3>Standard</h3>
-            <p>Brief price description</p>
-            <h4>5</h4>
-            <p>$</p>
-            <p>Per</p>
-            <p>month</p>
-            <ul>
-              <li>
-                <h5>5+ Operators</h5>
-                <h5>Notifications</h5>
-                <h5>Landing Pages</h5>
-              </li>
-            </ul>
-            <button type="button">Order Now</button>
-          </li>
+            <li class="price-item">
+              <h3 class="price-item-title">Standard</h3>
+              <p class="price-item-text">Brief price description</p>
+              <div class="price-item-inner">
+                <h4 class="price-item-number">5</h4>
+                <div class="price-item-content">
+                  <p class="price-item-currency">$</p>
+                  <p class="price-item-term">Per / month</p>
+                </div>
+              </div>
+              <ul class="price-inner">
+                <li class="inner-item">
+                  <h5 class="inner-item-title">5+ Operators</h5>
+                </li>
+                <li class="inner-item">
+                  <h5 class="inner-item-title">Notifications</h5>
+                </li>
+                <li class="inner-item">
+                  <h5 class="inner-item-title">Landing Pages</h5>
+                </li>
+              </ul>
+              <button type="button" class="price-item-button">Order Now</button>
+            </li>
 
-          <li>
-            <h3>Premium</h3>
-            <p>Brief price description</p>
-            <h4>10</h4>
-            <p>$</p>
-            <p>Per</p>
-            <p>month</p>
-            <ul>
-              <li>
-                <h5>10+ Operators</h5>
-                <h5>Notifications</h5>
-                <h5>Landing Pages</h5>
-              </li>
-            </ul>
-            <button type="button">Order Now</button>
-          </li>
-        </ul>
+            <li class="price-item">
+              <h3 class="price-item-title">Premium</h3>
+              <p class="price-item-text">Brief price description</p>
+              <div class="price-item-inner">
+                <h4 class="price-item-number">10</h4>
+                <div class="price-item-content">
+                  <p class="price-item-currency">$</p>
+                  <p class="price-item-term">Per / month</p>
+                </div>
+              </div>
+              <ul class="price-inner">
+                <li class="inner-item">
+                  <h5 class="inner-item-title">10+ Operators</h5>
+                </li>
+                <li class="inner-item">
+                  <h5 class="inner-item-title">Notifications</h5>
+                </li>
+                <li class="inner-item">
+                  <h5 class="inner-item-title">Landing Pages</h5>
+                </li>
+              </ul>
+              <button type="button" class="price-item-button">Order Now</button>
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
         <h3>ENTERPRISE</h3>
@@ -189,31 +214,85 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Join 100 Compannies who boost their business with Product</h2>
-        <button type="button">Get This</button>
-        <img src="./images/graphics.png" alt="Graphics" />
+      <section class="promo">
+        <div class="container promo-container">
+          <div class="ptomo-text-button">
+            <h2 class="promo-container-text">
+              Join 100 Compannies who boost their business with Product
+            </h2>
+            <button type="button" class="promo-button">Get This</button>
+          </div>
+          <img src="./images/graphics.png" alt="Graphics" />
+        </div>
       </section>
     </main>
-    <footer>
-      <nav>
-        <a href="./index.html"
-          ><img src="./images/logo.png" alt="Logo" />Product</a
-        >
-        <h3>Resource</h3>
-        <ul>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">FAQ</a></li>
-        </ul>
-        <h3>Legal Stuff</h3>
-        <ul>
-          <li><a href="">Disclaimer</a></li>
-          <li><a href="">Financing</a></li>
-          <li><a href="">Privacy Policy</a></li>
-        </ul>
+    <footer class="container footer-container">
+      <nav class="footer-navigation">
+        <div class="footer-logo-social">
+          <a href="./index.html" class="footer-logo"
+            ><img
+              src="./images/logo.png"
+              alt="Logo"
+              class="footer-logo-picture"
+            />Product</a
+          >
+          <ul class="footer-social-media">
+            <li class="footer-social-media-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-social-media-link"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-item">
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                class="footer-social-media-link"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-item">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="footer-social-media-link"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav-resourse">
+          <h3 class="footer-nav-title">Resource</h3>
+          <ul>
+            <li class="footer-nav-item"><a href="">About Us</a></li>
+            <li class="footer-nav-item"><a href="">Blog</a></li>
+            <li class="footer-nav-item"><a href="">Contact</a></li>
+            <li class="footer-nav-item"><a href="">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-legal">
+          <h3 class="footer-nav-title">Legal Stuff</h3>
+          <ul>
+            <li class="footer-nav-item"><a href="">Disclaimer</a></li>
+            <li class="footer-nav-item"><a href="">Financing</a></li>
+            <li class="footer-nav-item"><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
       </nav>
+      <p class="footer-final-text">
+        Made With Love By Figmaland All Right Reserved
+      </p>
     </footer>
   </body>
 </html>

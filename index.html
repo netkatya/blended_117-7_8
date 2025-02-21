@@ -32,7 +32,7 @@
             />Product</a
           >
           <ul class="nav-header-list">
-            <li class="nav-header-list-item">
+            <li class="nav-header-list-item current">
               <a href="./index.html">Product</a>
             </li>
             <li class="nav-header-list-item">
@@ -95,18 +95,38 @@
           <h2 class="benefits-title">Product was Built Specifically for You</h2>
           <ul class="benefits-list">
             <li class="benefits-list-item">
+              <div class="benefits-list-icon benefits-list-icon-cursor">
+                <svg width="11" height="18" class="icon-cursor">
+                  <use href="./images/icons.svg#icon-cursor"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list-item-title">First click tests</h3>
               <p>While most people enjoy casino gambling,</p>
             </li>
             <li class="benefits-list-item">
+              <div class="benefits-list-icon benefits-list-icon-wave">
+                <svg width="18" height="18" class="icon-wave">
+                  <use href="./images/icons.svg#icon-wave"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list-item-title">Design surveys</h3>
               <p>Sports betting, lottery and bingo playing for the fun</p>
             </li>
             <li class="benefits-list-item">
+              <div class="benefits-list-icon benefits-list-icon-heard">
+                <svg width="16" height="18" class="icon-heard">
+                  <use href="./images/icons.svg#icon-heard"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list-item-title">Preference tests</h3>
               <p>The Myspace page defines the individual.</p>
             </li>
             <li class="benefits-list-item">
+              <div class="benefits-list-icon benefits-list-icon-sandclock">
+                <svg width="14" height="18" class="icon-sandclock">
+                  <use href="./images/icons.svg#icon-sandclock"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list-item-title">Five second tests</h3>
               <p>Personal choices and the overall personality of the person.</p>
             </li>
@@ -490,33 +510,83 @@
       </section>
       <section class="promo">
         <div class="container promo-container">
-          <h2 class="promo-container-text">
-            Join 100 Compannies who boost their business with Product
-          </h2>
-          <button type="button">Get This</button>
-          <img src="./images/graphics.png" alt="Graphics" width="361" />
+          <div class="ptomo-text-button">
+            <h2 class="promo-container-text">
+              Join 100 Compannies who boost their business with Product
+            </h2>
+            <button type="button" class="promo-button">Get This</button>
+          </div>
+          <img src="./images/graphics.png" alt="Graphics" />
         </div>
       </section>
     </main>
-    <footer>
-      <nav>
-        <a href="./index.html"
-          ><img src="./images/logo.png" alt="Logo" />Product</a
-        >
-        <h3>Resource</h3>
-        <ul>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">FAQ</a></li>
-        </ul>
-        <h3>Legal Stuff</h3>
-        <ul>
-          <li><a href="">Disclaimer</a></li>
-          <li><a href="">Financing</a></li>
-          <li><a href="">Privacy Policy</a></li>
-        </ul>
+    <footer class="container footer-container">
+      <nav class="footer-navigation">
+        <div class="footer-logo-social">
+          <a href="./index.html" class="footer-logo"
+            ><img
+              src="./images/logo.png"
+              alt="Logo"
+              class="footer-logo-picture"
+            />Product</a
+          >
+          <ul class="footer-social-media">
+            <li class="footer-social-media-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-social-media-link"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-item">
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                class="footer-social-media-link"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-item">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="footer-social-media-link"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav-resourse">
+          <h3 class="footer-nav-title">Resource</h3>
+          <ul>
+            <li class="footer-nav-item"><a href="">About Us</a></li>
+            <li class="footer-nav-item"><a href="">Blog</a></li>
+            <li class="footer-nav-item"><a href="">Contact</a></li>
+            <li class="footer-nav-item"><a href="">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-legal">
+          <h3 class="footer-nav-title">Legal Stuff</h3>
+          <ul>
+            <li class="footer-nav-item"><a href="">Disclaimer</a></li>
+            <li class="footer-nav-item"><a href="">Financing</a></li>
+            <li class="footer-nav-item"><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
       </nav>
+      <p class="footer-final-text">
+        Made With Love By Figmaland All Right Reserved
+      </p>
     </footer>
   </body>
 </html>
