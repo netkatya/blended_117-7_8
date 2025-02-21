@@ -855,7 +855,8 @@ header {
     transition-timing-function: ease-in-out;
 }
 
-.promo-button:hover {
+.promo-button:hover,
+.promo-button:focus {
     background-color: #02897a;
     color: #fff;
     border: 1px solid #fff;
