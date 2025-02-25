@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/customers.css" />
   </head>
   <body>
     <header>
@@ -54,47 +54,71 @@
       </div>
     </header>
     <main>
-      <section>
-        <h1>Our Clients</h1>
-        <ul>
-          <li><img src="./images/Airbnb Logo.png" alt="Airbnb Logo" /></li>
-          <li><img src="./images/Google Logo.png" alt="Google Logo" /></li>
-          <li>
+      <section class="container clients-container">
+        <h1 class="clients-container-title">Our Clients</h1>
+        <ul class="clients-container-list">
+          <li class="clients-container-list-item">
+            <img src="./images/Airbnb Logo.png" alt="Airbnb Logo" />
+          </li>
+          <li class="clients-container-list-item">
+            <img src="./images/Google Logo.png" alt="Google Logo" />
+          </li>
+          <li class="clients-container-list-item">
             <img src="./images/Microsoft Logo.png" alt="Microsoft Logo" />
           </li>
-          <li><img src="./images/FedEx Logo.png" alt="FedEx Logo" /></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Why Choose Product?</h2>
-        <ul>
-          <li>
-            <h3>Special Business</h3>
-            <p>
-              Product helps you see how many more days you need to work to reach
-              your financial goal for the month and year.
-            </p>
-          </li>
-          <li>
-            <h3>Instant Result</h3>
-            <p>
-              Product helps you see how many more days you need to work to reach
-              your financial goal for the month and year.
-            </p>
-          </li>
-          <li>
-            <h3>Fastest way to organize</h3>
-            <p>
-              Product helps you see how many more days you need to work to reach
-              your financial goal for the month and year.
-            </p>
+          <li class="clients-container-list-item">
+            <img src="./images/FedEx Logo.png" alt="FedEx Logo" />
           </li>
         </ul>
       </section>
+      <section class="benefits">
+        <h2 class="benefits-title">Why Choose Product?</h2>
+        <ul class="benefits-list">
+          <li class="benefits-list-item">
+            <div class="benefits-list-icon benefits-list-icon-cursor">
+              <svg width="12" height="18" class="icon-cursor">
+                <use href="./images/icons.svg#icon-cursor"></use>
+              </svg>
+            </div>
+            <h3 class="benefits-list-item-title">Special Business</h3>
+            <p class="benefits-list-item-text">
+              Product helps you see how many more days you need to work <br />
+              to reach your financial goal <br />
+              for the month and year.
+            </p>
+          </li>
+          <li class="benefits-list-item">
+            <div class="benefits-list-icon benefits-list-icon-wave">
+              <svg width="18" height="18" class="icon-wave">
+                <use href="./images/icons.svg#icon-wave"></use>
+              </svg>
+            </div>
+            <h3 class="benefits-list-item-title">Instant Result</h3>
+            <p class="benefits-list-item-text">
+              Product helps you see how many more days you need to work<br />
+              to reach your financial goal <br />
+              for the month and year.
+            </p>
+          </li>
+          <li class="benefits-list-item">
+            <div class="benefits-list-icon benefits-list-icon-heard">
+              <svg width="16" height="18" class="icon-heard">
+                <use href="./images/icons.svg#icon-heard"></use>
+              </svg>
+            </div>
+            <h3 class="benefits-list-item-title">Fastest way to organize</h3>
+            <p class="benefits-list-item-text">
+              Product helps you see how many more days you need to work<br />
+              to reach your financial goal<br />
+              for the month and year.
+            </p>
+          </li>
+        </ul>
+      </section>
       <section>
-        <h2>How Product Work?</h2>
-        <ul>
-          <li>
+        <h2 class="">How Product Work?</h2>
+        <ul class="">
+          <li class="">
             <img src="./images/mac1.png" alt="Laptop1" width="500" />
             <h4>STEP 1</h4>
             <h3>Apply for a product</h3>
@@ -104,7 +128,7 @@
               business through our proprietary credit analysis technology
             </p>
           </li>
-          <li>
+          <li class="">
             <h4>STEP 2</h4>
             <h3>Pay fully refundable</h3>
             <p>
@@ -114,7 +138,7 @@
             </p>
             <img src="./images/mac2.png" alt="Laptop2" width="500" />
           </li>
-          <li>
+          <li class="">
             <img src="./images/mac3.png" alt="Laptop3" width="500" />
             <h4>STEP 3</h4>
             <h3>Completion</h3>
@@ -152,31 +176,107 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Join 100 Compannies who boost their business with Product</h2>
-        <button type="button">Get This</button>
-        <img src="./images/graphics.png" alt="Graphics" />
+      <section class="promo">
+        <div class="container promo-container">
+          <div class="ptomo-text-button">
+            <h2 class="promo-container-text">
+              Join 100 Compannies who boost their business with Product
+            </h2>
+            <button type="button" class="promo-button">Get This</button>
+          </div>
+          <img src="./images/graphics.png" alt="Graphics" />
+        </div>
       </section>
     </main>
-    <footer>
-      <nav>
-        <a href="./index.html"
-          ><img src="./images/logo.png" alt="Logo" />Product</a
-        >
-        <h3>Resource</h3>
-        <ul>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">FAQ</a></li>
-        </ul>
-        <h3>Legal Stuff</h3>
-        <ul>
-          <li><a href="">Disclaimer</a></li>
-          <li><a href="">Financing</a></li>
-          <li><a href="">Privacy Policy</a></li>
-        </ul>
+    <footer class="container footer-container">
+      <nav class="footer-navigation">
+        <div class="footer-logo-social">
+          <a href="./index.html" class="footer-logo"
+            ><img
+              src="./images/logo.png"
+              alt="Logo"
+              class="footer-logo-picture"
+            />Product</a
+          >
+          <ul class="footer-social-media">
+            <li class="footer-social-media-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-social-media-link"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-item">
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                class="footer-social-media-link"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-item">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="footer-social-media-link"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav-resourse">
+          <h3 class="footer-nav-title">Resource</h3>
+          <ul>
+            <li class="footer-nav-item"><a href="">About Us</a></li>
+            <li class="footer-nav-item"><a href="">Blog</a></li>
+            <li class="footer-nav-item"><a href="">Contact</a></li>
+            <li class="footer-nav-item"><a href="">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-legal">
+          <h3 class="footer-nav-title">Legal Stuff</h3>
+          <ul>
+            <li class="footer-nav-item"><a href="">Disclaimer</a></li>
+            <li class="footer-nav-item"><a href="">Financing</a></li>
+            <li class="footer-nav-item"><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-form-container">
+          <h3 class="footer-form-title">
+            knowing you're always on the best energy deal.
+          </h3>
+          <form>
+            <div class="footer-form-input-wraper">
+              <input
+                type="tel"
+                class="footer-form-input"
+                placeholder="Enter your phone number"
+                name="phone"
+                required
+              />
+              <svg width="18" height="28" class="footer-form-icon">
+                <use href="./images/icons.svg#icon-mobile-screen"></use>
+              </svg>
+            </div>
+            <button type="submit" class="footer-form-button">
+              Sign up Now
+            </button>
+          </form>
+        </div>
       </nav>
+      <p class="footer-final-text">
+        Made With Love By Figmaland All Right Reserved
+      </p>
     </footer>
   </body>
 </html>

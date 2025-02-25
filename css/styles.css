@@ -232,6 +232,8 @@ header {
     width: 54px;
     height: 54px;
     border-radius: 19px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background;
 }
 
 .benefits-list-icon-cursor {
@@ -936,6 +938,86 @@ header {
     font-weight: 400;
     font-size: 16px;
     line-height: 219%;
+}
+
+.footer-form-container {
+    margin-left: 83px;
+}
+
+.footer-form-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+.footer-form-input-wraper {
+    position: relative;
+}
+
+.footer-form-icon {
+    fill: #02897A;
+    position: absolute;
+    top: 14px;
+    transform: translateY(-14%);
+    left: 12px;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.footer-form-input:hover +.footer-form-icon,
+.footer-form-input:focus +.footer-form-icon {
+    opacity: 1;
+}
+
+.footer-form-input {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 25px;
+    padding: 10px 43px 10px 42px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #02897a;
+    border-radius: 4px;
+    outline: transparent;
+    border: 1px solid #bcd0e5;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.footer-form-input::placeholder {
+    opacity: 0;
+    transition-property: color, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+.footer-form-input:hover::placeholder,
+.footer-form-input:focus::placeholder {
+    opacity: 1;
+    color: #02897a;
+}
+
+
+
+.footer-form-button {
+    min-width: 131px;
+    padding: 8px 15px 7px 15px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #02897A;
+    border: #02897A;
+    transition: background-color, color 250ms ease-in-out;
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+    background-color: #fff;
+    color: #02897A;
+    border: 1px solid #02897A;
 }
 
 .footer-final-text {
