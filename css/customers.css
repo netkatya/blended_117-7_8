@@ -147,7 +147,7 @@ header {
 }
 
 .benefits {
-    width: 100%;
+    width: 100vw;
     background-color: #f5f5f5;
     padding: 24px 15px 68px 15px;
 }
@@ -212,6 +212,147 @@ header {
     max-width: 275px;
     text-align: center;
 }
+
+/*product*/
+
+.product-section {
+    width: 1057px;
+    padding-top: 101px;
+    padding-bottom: 115px;
+}
+
+.product-section-title {
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 73px;
+}
+
+.product-section-list {
+    margin-bottom: 78px;
+}
+
+.product-section-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-section-list-item:not(:last-child) {
+    margin-bottom: 100px;
+}
+
+.product-step-wraper {
+    max-width: 445px;
+}
+
+.product-step-one-wraper {
+    margin-left: 89px;
+}
+
+.product-step-two-wraper {
+    margin-right: 76px;
+}
+
+.product-step-three-wraper {
+    margin-left: 88px;
+}
+
+.product-section-list-step {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.product-section-list-title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.product-section-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+}
+
+.product-button {
+    border-radius: 8px;
+    min-width: 224px;
+    padding: 11px 18px;
+    display: block;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    background-color: #02897A;
+    border: 1px solid #02897A;
+    transition: background-color,color 250ms ease-in-out;
+}
+
+.product-button:hover,
+.product-button:focus {
+    background-color: #fff;
+    color: #02897A;
+    border: 1px solid #02897A;
+}
+/*join*/
+
+.join-container {
+    width: 100vw;
+    background: linear-gradient(180deg, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
+    padding-top: 35px;
+    padding-bottom: 45px;
+    margin-bottom: 100px;
+}
+
+.join-title {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 93px;
+}
+
+.join-list {
+    display: flex;
+    justify-content: center;
+    gap: 227px;
+}
+
+.join-picture {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+
+
+.join-list-item-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    color: #000;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 27px;
+}
+
+.join-lils-item-list {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.join-list-item-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 175%;
+    color: #000;
+}
+
 /*--promo--*/
 .promo-container {
     width: 968px;

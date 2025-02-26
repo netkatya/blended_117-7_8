@@ -232,8 +232,6 @@ header {
     width: 54px;
     height: 54px;
     border-radius: 19px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-        background;
 }
 
 .benefits-list-icon-cursor {
@@ -507,6 +505,7 @@ header {
     justify-content: space-around;
     align-items: center;
     width: calc((100% - 100px) / 2);
+    transition: transform 250ms ease-in-out;
 }
 
 .process-image {
@@ -524,6 +523,10 @@ header {
     text-align: center;
     color: #2f281e;
     max-height: 50px;
+}
+
+.process-list-item:hover {
+    transform: scale(1.05);
 }
 
 .process-button {
@@ -564,6 +567,7 @@ header {
     font-size: 16px;
     line-height: 162%;
     margin-bottom: 40px;
+    max-width: 465px;
 }
 
 .strategy-section-list {
@@ -633,6 +637,7 @@ header {
     font-family: "Montserrat", serif;
     border-radius: 8px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 .price-item-title {

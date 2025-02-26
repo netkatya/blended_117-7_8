@@ -178,6 +178,7 @@ header {
     font-family: "Montserrat", serif;
     border-radius: 8px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 .price-item-title {
@@ -292,7 +293,7 @@ header {
 .enterprise-section {
     padding-top: 53px;
     padding-bottom: 51px;
-    width: 100%;
+    width: 100vw;
     background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
 }
 
@@ -400,6 +401,8 @@ header {
     line-height: 175%;
 }
 
+/*questions*/
+
 .questions-container {
     width: 950px;
     padding-bottom: 100px;
@@ -451,6 +454,8 @@ header {
     font-weight: 400;
     font-size: 16px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 16px;
 }
 
 .question-item-answer {
