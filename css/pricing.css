@@ -455,12 +455,18 @@ header {
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e7e7;
     margin-bottom: 16px;
-}
-
-.question-item-answer {
     display: none;
 }
 
+.questions-item.open {
+    border-bottom: none;
+}
+
+.questions-item.open .question-item-answer {
+    display: block;
+    border-bottom: 1px solid #e7e7e7;
+}
+/*#endquestion*/
 /*--promo--*/
 .promo-container {
     width: 968px;
@@ -602,8 +608,7 @@ header {
 .footer-form-icon {
     fill: #02897A;
     position: absolute;
-    top: 14px;
-    transform: translateY(-14%);
+    top: 10px;
     left: 12px;
     opacity: 0;
     transition: opacity 200ms ease-in-out;

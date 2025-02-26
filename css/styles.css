@@ -963,8 +963,7 @@ header {
 .footer-form-icon {
     fill: #02897A;
     position: absolute;
-    top: 14px;
-    transform: translateY(-14%);
+    top: 10px;
     left: 12px;
     opacity: 0;
     transition: opacity 200ms ease-in-out;

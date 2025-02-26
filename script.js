@@ -15,18 +15,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
-      const answer = this.closest("li").querySelector(".question-item-answer");
+      const listItem = this.closest("li");
+      const answer = listItem.querySelector(".question-item-answer");
 
       // Toggle visibility
-      answer.style.display = answer.style.display === "none" || answer.style.display === "" ? "block" : "none";
+      const isOpen = answer.style.display === "block";
+      answer.style.display = isOpen ? "none" : "block";
+
+      // Toggle the "open" class to remove/add border
+      listItem.querySelector(".questions-item").classList.toggle("open", !isOpen);
 
       // Change the icon (optional)
       const icon = this.querySelector("use");
-      if (icon.getAttribute("href") === "./images/icons.svg#icon-minus_circle") {
-        icon.setAttribute("href", "./images/icons.svg#icon-plus_circle");
-      } else {
-        icon.setAttribute("href", "./images/icons.svg#icon-minus_circle");
-      }
+      icon.setAttribute(
+        "href",
+        isOpen ? "./images/icons.svg#icon-plus_circle" : "./images/icons.svg#icon-minus_circle"
+      );
     });
   });
 });
