@@ -342,7 +342,6 @@ header {
 /*--features section--*/
 .features-section {
     padding-top: 294px;
-    width: 1161px;
     padding-bottom: 6px;
 }
 
@@ -353,6 +352,10 @@ header {
 }
 
 .features-container {
+    width: 1161px;
+}
+
+.features-container-content {
     display: flex;
     gap: 60px;
 }
@@ -360,8 +363,6 @@ header {
 .feature-container-picture {
     margin-top: 80px;
     margin-bottom: 20px;
-    max-width: 528px;
-    height: 392px;
 }
 
 .features-container-list-item:not(:last-child) {
@@ -402,9 +403,12 @@ header {
 
 /*questions*/
 
-.questions-container {
-    width: 950px;
+.questions {
     padding-bottom: 100px;
+}
+
+.questions-container {
+    max-width: 950px;
 }
 
 .questions-title {
@@ -513,12 +517,12 @@ header {
 }
 
 /*--footer--*/
-.footer-container {
+.footer {
     padding-top: 50px;
     padding-bottom: 40px;
 }
 
-.footer-navigation {
+.footer-container {
     display: flex;
     margin-bottom: 10px;
 }
@@ -540,6 +544,7 @@ header {
     line-height: 93%;
     color: #173a56;
     margin-bottom: 18px;
+    width: 178px;
 }
 
 .footer-social-media {
@@ -555,12 +560,27 @@ header {
     align-items: center;
     width: 40px;
     height: 40px;
+    transition: background-color 250ms ease-in-out;
+}
+
+.footer-social-media-item:hover,
+.footer-social-media-item:focus {
+    background-color: #02897a;
 }
 
 .footer-social-media-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: stroke, fill;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+.footer-social-media-item:hover .footer-icon,
+.footer-social-media-item:focus .footer-icon {
+    stroke: #EDFFFC;
+    fill: #02897A;
 }
 
 .footer-icon {
@@ -570,11 +590,12 @@ header {
 }
 
 .footer-nav-resourse {
-    margin-right: 129px;
+    margin-right: auto;
 }
 
 .footer-nav-legal {
     margin-right: 83px;
+    min-width: 131px;
 }
 
 .footer-nav-title {
@@ -588,10 +609,16 @@ header {
     font-weight: 400;
     font-size: 16px;
     line-height: 219%;
+    transition: text-decoration 250ms ease-in-out;
+}
+
+.footer-nav-item:hover,
+.footer-nav-item:focus {
+    text-decoration: underline;
 }
 
 .footer-form-container {
-    margin-left: 83px;
+    max-width: 325px;
 }
 
 .footer-form-title {
@@ -658,7 +685,7 @@ header {
     color: #fff;
     border-radius: 4px;
     background-color: #02897A;
-    border: #02897A;
+    border: 1px solid #02897A;
     transition: background-color, color 250ms ease-in-out;
 }
 

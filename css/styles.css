@@ -129,6 +129,7 @@ header {
 .hero-content {
     margin-right: 35px;
     padding: 112px 0px;
+    max-width: 465px;
 }
 
 .hero-content-title {
@@ -290,17 +291,20 @@ header {
     margin-right: 84px;
     padding-top: 41px;
     padding-bottom: 41px;
+    max-width: 486px;
 }
 
 .management-title-small {
     font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 16px; 
+    max-width: 224px;
 }
 
 .management-title-big {
     font-weight: 700;
     font-size: 32px;
+    display: block;
+    margin-top: 8px;
     margin-bottom: 25px;
 }
 
@@ -328,32 +332,34 @@ header {
     line-height: 162%;
 }
 
-.customer-support-container {
-    display: flex;
+.customer-support {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.customer-support-image {
-    margin-right: 84px;
-    max-width: 100%;
+.customer-support-container {
+    display: flex;
 }
+
 
 .customer-support-info {
     padding: 41px 0 40px 0;
     max-width: 450.77px;
+    margin-left: 84px;
 }
 
 .customer-support-title-small {
     font-weight: 600;
     font-size: 16px;
-    margin-bottom: 8px;
+    max-width: 304px;
 }
 
 .customer-support-title-big {
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 25px;
+    display: block;
+    margin-top: 8px;
 }
 
 .customer-support-text {
@@ -414,29 +420,34 @@ header {
     line-height: 162%;
 }
 
+.collaborative-section {
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
 
 .collaborative-section-container {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 75px;
 }
 
 .collaborative-section-text {
     padding-top: 41px;
     padding-bottom: 41px;
     max-width: 486px;
+    margin-right: 84px;
 }
 
 .collaborative-title-small {
     font-weight: 600;
     font-size: 16px;
-    margin-bottom: 8px;
+    max-width: 226px;
 }
 
 .collaborative-title-big {
     font-weight: 700;
     font-size: 32px;
+    margin-top: 8px;
     margin-bottom: 25px;
+    display: block;
 }
 
 .collaborative-text {
@@ -463,15 +474,15 @@ header {
     line-height: 162%;
 }
 
-.collaborative-image {
-    max-width: 100%;
-    margin-left: 84px;
+
+
+.process {
+    padding-top: 75px;
+    padding-bottom: 50px;
 }
 
 .process-container {
     max-width: 916px;
-    padding-top: 75px;
-    padding-bottom: 50px;
 }
 
 .process-title {
@@ -568,6 +579,10 @@ header {
     line-height: 162%;
     margin-bottom: 40px;
     max-width: 465px;
+}
+
+.strategies-content {
+    
 }
 
 .strategy-section-list {
@@ -749,7 +764,7 @@ header {
     border: 1px solid #fff;
 }
 
-.clients-container {
+.clients {
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -869,11 +884,11 @@ header {
     border: 1px solid #fff;
 }
 
-.footer-container {
+.footer {
     padding-top: 50px;
     padding-bottom: 40px;
 }
-.footer-navigation {
+.footer-container {
     display: flex;
     margin-bottom: 10px;
 }
@@ -895,6 +910,7 @@ header {
     line-height: 93%;
     color: #173a56;
     margin-bottom: 18px;
+    width: 178px;
 }
 
 .footer-social-media {
@@ -910,12 +926,27 @@ header {
     align-items: center;
     width: 40px;
     height: 40px;
+    transition: background-color 250ms ease-in-out;
+}
+
+.footer-social-media-item:hover,
+.footer-social-media-item:focus {
+    background-color: #02897a;
 }
 
 .footer-social-media-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: stroke, fill;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+.footer-social-media-item:hover .footer-icon,
+.footer-social-media-item:focus .footer-icon{
+    stroke: #EDFFFC;
+    fill: #02897A;
 }
 
 .footer-icon {
@@ -925,11 +956,12 @@ header {
 }
 
 .footer-nav-resourse {
-    margin-right: 129px;
+    margin-right: auto;
 }
 
 .footer-nav-legal {
     margin-right: 83px;
+    min-width: 131px;
 }
 
 .footer-nav-title {
@@ -943,10 +975,16 @@ header {
     font-weight: 400;
     font-size: 16px;
     line-height: 219%;
+    transition: text-decoration 250ms ease-in-out;
+}
+
+.footer-nav-item:hover,
+.footer-nav-item:focus {
+    text-decoration: underline;
 }
 
 .footer-form-container {
-    margin-left: 83px;
+    max-width: 325px;
 }
 
 .footer-form-title {
@@ -1013,7 +1051,7 @@ header {
     color: #fff;
     border-radius: 4px;
     background-color: #02897A;
-    border: #02897A;
+    border: 1px solid #02897A;
     transition: background-color, color 250ms ease-in-out;
 }
 

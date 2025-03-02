@@ -64,29 +64,28 @@
               Tools, tutorials, design and innovation experts, all in one place!
               The most intuitive way to imagine your next user experience.
             </p>
-            <ul class="hero-content-buttons">
-              <li>
-                <button
-                  type="button"
-                  class="hero-content-button hero-cantent-button-green"
-                >
-                  Get started
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  class="hero-content-button hero-cantent-button-clear"
-                >
-                  <svg class="hero-content-button-icon" width="20" height="18">
-                    <use href="./images/icons.svg#icon-Play"></use>
-                  </svg>
-                  Watch the Video
-                </button>
-              </li>
-            </ul>
+            <div class="hero-content-buttons">
+              <button
+                type="button"
+                class="hero-content-button hero-cantent-button-green"
+              >
+                Get started
+              </button>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="hero-cantent-button-clear"
+              >
+                <svg class="hero-content-button-icon" width="20" height="18">
+                  <use href="./images/icons.svg#icon-Play"></use>
+                </svg>
+                Watch the Video
+              </a>
+            </div>
           </div>
-          <img src="./images/hero-img.png" alt="people" />
+          <svg width="610" height="555">
+            <use href="./images/icons.svg#icon-hero"></use>
+          </svg>
         </div>
       </section>
       <!--benefits section-->
@@ -138,8 +137,11 @@
       <section class="management">
         <div class="container management-container">
           <div class="management-container-content">
-            <h3 class="management-title-small">Effortless Validation for</h3>
-            <h2 class="management-title-big">Management</h2>
+            <h3 class="management-title-small">
+              Effortless Validation for
+              <span class="management-title-big">Management</span>
+            </h3>
+
             <p class="management-text">
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall
@@ -162,27 +164,22 @@
               </li>
             </ul>
           </div>
-          <img
-            src="./images/management-img.png"
-            alt="Folders"
-            width="540"
-            height="500"
-          />
+          <svg width="540" height="500">
+            <use href="./images/icons.svg#icon-management"></use>
+          </svg>
         </div>
       </section>
       <!--Customer support-->
       <section class="customer-support">
         <div class="container customer-support-container">
-          <img
-            src="./images/support-img.png"
-            alt="Laptop"
-            class="customer-support-image"
-          />
+          <svg width="540" height="500">
+            <use href="./images/icons.svg#icon-customer"></use>
+          </svg>
           <div class="customer-support-info">
             <h3 class="customer-support-title-small">
               Easier decision making for
+              <span class="customer-support-title-big">Customer Support</span>
             </h3>
-            <h2 class="customer-support-title-big">Customer Support</h2>
             <p class="customer-support-text">
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall
@@ -228,8 +225,10 @@
       <section class="collaborative-section">
         <div class="container collaborative-section-container">
           <div class="collaborative-section-text">
-            <h3 class="collaborative-title-small">Optimisation for</h3>
-            <h2 class="collaborative-title-big">Collaborative</h2>
+            <h3 class="collaborative-title-small">
+              Optimisation for
+              <span class="collaborative-title-big">Collaborative</span>
+            </h3>
             <p class="collaborative-text">
               Few would argue that, despite the advancements of feminism over
               the past three decades, women still face a double standard when it
@@ -254,12 +253,9 @@
               </li>
             </ul>
           </div>
-
-          <img
-            src="./images/collaboration-img.png"
-            alt="Pictures"
-            class="collaborative-image"
-          />
+          <svg width="540" height="500">
+            <use href="./images/icons.svg#icon-collaboration"></use>
+          </svg>
         </div>
       </section>
       <!--process section-->
@@ -310,59 +306,64 @@
         </div>
       </section>
       <!--Strategies section-->
-      <section class="container strategies-section">
-        <h2 class="strategies-section-title">Contents Strategies</h2>
-        <p class="strategies-section-text">
-          We focus on ergonomics and meeting you where you work. It's only a
-          keystroke away.
-        </p>
-        <ul class="strategy-section-list">
-          <li class="strategy-section-list-item">
-            <img
-              src="./images/cont_strat_1.jpg"
-              alt="Office"
-              class="strategies-section-picture"
-            />
-            <div class="strategy-item-text-together">
-              <p class="strategy-section-list-item-text">
-                By <span class="strategy-name">Wahid Ari</span> | 03 March 2019
-              </p>
-              <h3 class="strategy-section-list-item-title">
-                Increasing Prosperity With Positive Thinking
-              </h3>
-            </div>
-          </li>
-          <li class="strategy-section-list-item">
-            <img
-              src="./images/cont_strat_2.jpg"
-              alt="Conference hall"
-              class="strategies-section-picture"
-            />
-            <div class="strategy-item-text-together">
-              <p class="strategy-section-list-item-text">
-                By <span class="strategy-name">Wahid Ari</span> | 03 March 2019
-              </p>
-              <h3 class="strategy-section-list-item-title">
-                Motivation Is The First Step To Success
-              </h3>
-            </div>
-          </li>
-          <li class="strategy-section-list-item">
-            <img
-              src="./images/cont_strat_3.jpg"
-              alt="Buildings"
-              class="strategies-section-picture"
-            />
-            <div class="strategy-item-text-together">
-              <p class="strategy-section-list-item-text">
-                By <span class="strategy-name">Wahid Ari</span> | 03 March 2019
-              </p>
-              <h3 class="strategy-section-list-item-title">
-                Success Steps For Your Personal Or Business
-              </h3>
-            </div>
-          </li>
-        </ul>
+      <section class="strategies-section">
+        <div class="container strategies-content">
+          <h2 class="strategies-section-title">Contents Strategies</h2>
+          <p class="strategies-section-text">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+          <ul class="strategy-section-list">
+            <li class="strategy-section-list-item">
+              <img
+                src="./images/cont_strat_1.jpg"
+                alt="Office"
+                class="strategies-section-picture"
+              />
+              <div class="strategy-item-text-together">
+                <p class="strategy-section-list-item-text">
+                  By <span class="strategy-name">Wahid Ari</span> | 03 March
+                  2019
+                </p>
+                <h3 class="strategy-section-list-item-title">
+                  Increasing Prosperity With Positive Thinking
+                </h3>
+              </div>
+            </li>
+            <li class="strategy-section-list-item">
+              <img
+                src="./images/cont_strat_2.jpg"
+                alt="Conference hall"
+                class="strategies-section-picture"
+              />
+              <div class="strategy-item-text-together">
+                <p class="strategy-section-list-item-text">
+                  By <span class="strategy-name">Wahid Ari</span> | 03 March
+                  2019
+                </p>
+                <h3 class="strategy-section-list-item-title">
+                  Motivation Is The First Step To Success
+                </h3>
+              </div>
+            </li>
+            <li class="strategy-section-list-item">
+              <img
+                src="./images/cont_strat_3.jpg"
+                alt="Buildings"
+                class="strategies-section-picture"
+              />
+              <div class="strategy-item-text-together">
+                <p class="strategy-section-list-item-text">
+                  By <span class="strategy-name">Wahid Ari</span> | 03 March
+                  2019
+                </p>
+                <h3 class="strategy-section-list-item-title">
+                  Success Steps For Your Personal Or Business
+                </h3>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--price section-->
       <section class="price">
@@ -445,13 +446,13 @@
         </div>
       </section>
       <!--clients say-->
-      <section class="container clients-container">
+      <section class="clients">
         <h2 class="clients-container-title">What Clients Say</h2>
         <p class="clients-container-text">
           Problems trying to resolve the conflict between the two major realms
           of Classical physics: Newtonian mechanics
         </p>
-        <ul class="clients-container-list">
+        <ul class="container clients-container-list">
           <li class="clients-container-list-item">
             <img src="./images/stars.png" alt="Stars" class="stars-picture" />
             <p class="clients-list-item-text">
@@ -520,8 +521,8 @@
         </div>
       </section>
     </main>
-    <footer class="container footer-container">
-      <nav class="footer-navigation">
+    <footer class="footer">
+      <div class="container footer-container">
         <div class="footer-logo-social">
           <a href="./index.html" class="footer-logo"
             ><img
@@ -567,7 +568,7 @@
           </ul>
         </div>
         <div class="footer-nav-resourse">
-          <h3 class="footer-nav-title">Resource</h3>
+          <p class="footer-nav-title">Resource</p>
           <ul>
             <li class="footer-nav-item"><a href="">About Us</a></li>
             <li class="footer-nav-item"><a href="">Blog</a></li>
@@ -576,7 +577,7 @@
           </ul>
         </div>
         <div class="footer-nav-legal">
-          <h3 class="footer-nav-title">Legal Stuff</h3>
+          <p class="footer-nav-title">Legal Stuff</p>
           <ul>
             <li class="footer-nav-item"><a href="">Disclaimer</a></li>
             <li class="footer-nav-item"><a href="">Financing</a></li>
@@ -605,7 +606,7 @@
             </button>
           </form>
         </div>
-      </nav>
+      </div>
       <p class="footer-final-text">
         Made With Love By Figmaland All Right Reserved
       </p>
