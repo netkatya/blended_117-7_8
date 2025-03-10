@@ -114,10 +114,6 @@ header {
         display: none;
     }
 
-    .mobile-menu {
-        display: none;
-    }
-
     header {
         padding-top: 22px;
         padding-bottom: 22px;
@@ -300,10 +296,15 @@ header {
 .menu-nav-header-button:hover,
 .menu-nav-header-button:focus {
     background-color: #ffffff;
-    color: #02897a;
+    color: #173a56;
     border: 1px solid #02897a;
 }
 
+@media screen and (min-width:768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
 
 .hero {
     padding-top: 30px;
@@ -929,7 +930,7 @@ header {
 .process-button:hover,
 .process-button:focus {
     background-color: #ffffff;
-    color: #02897A;
+    color: #173a56;
     border: 1px solid #BCD0E5;
 }
 
@@ -1181,7 +1182,7 @@ header {
 .price-item-button:hover,
 .price-item-button:focus {
     background-color: #fff;
-    color: #02897A;
+    color: #173a56;
     border: 1px solid #BCD0E5;
 }
 
@@ -1202,7 +1203,7 @@ header {
 
 .price-item.active .price-item-button {
     background-color: #fff;
-    color: #02897A;
+    color: #173a56;
     border: 1px solid #BCD0E5;
 }
 
