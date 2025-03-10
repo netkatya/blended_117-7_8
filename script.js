@@ -35,3 +35,34 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.querySelector(".menu-button");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const closeButton = document.querySelector(".mobile-menu-close");
+
+  // Open menu
+  menuButton.addEventListener("click", function () {
+    mobileMenu.classList.add("open");
+    mobileMenu.classList.remove("closing");
+  });
+
+  // Close menu function with animation
+  function closeMenu() {
+    mobileMenu.classList.add("closing");
+    setTimeout(() => {
+      mobileMenu.classList.remove("open", "closing");
+    }, 300); // Matches the transition duration (0.3s)
+  }
+
+  // Close when clicking the close button
+  closeButton.addEventListener("click", closeMenu);
+
+  // Close menu when clicking outside of it
+  document.addEventListener("click", function (event) {
+    if (!mobileMenu.contains(event.target) && !menuButton.contains(event.target)) {
+      closeMenu();
+    }
+  });
+});
+
+

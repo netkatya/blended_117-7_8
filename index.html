@@ -58,6 +58,70 @@
           </button>
         </nav>
       </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list">
+              <li class="mobile-menu-nav-list-item">
+                <a href="./index.html">Product</a>
+              </li>
+              <li class="mobile-menu-nav-list-item">
+                <a href="./pricing.html">Pricing</a>
+              </li>
+              <li class="mobile-menu-nav-list-item">
+                <a href="./customers.html">Customers</a>
+              </li>
+              <li class="mobile-menu-nav-list-item">
+                <a href="">Resources</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="menu-buttons">
+            <li><button class="menu-nav-header-button">Sign In</button></li>
+            <li><button class="menu-nav-header-button">Sign Up</button></li>
+          </ul>
+          <ul class="menu-social-media footer-social-media">
+            <li class="footer-social-media-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-social-media-link"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-item">
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                class="footer-social-media-link"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-item">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                class="footer-social-media-link"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <!--hero section-->
@@ -279,40 +343,44 @@
             Do you require some help for your project: Conception workshop,
             prototyping, marketing strategy, landing page, Ux/UI?
           </p>
-          <ul class="process-list">
-            <li class="process-list-item">
-              <img
-                src="./images/avatar_1.png"
-                alt="Avatar_1"
-                class="process-image"
-              />
-              <p class="process-item-text">I can take care of your pitch</p>
-            </li>
-            <li class="process-list-item">
-              <p class="process-item-text">I can take care of your pitch</p>
-              <img
-                src="./images/avatar_2.png"
-                alt="Avatar_2"
-                class="process-image"
-              />
-            </li>
-            <li class="process-list-item">
-              <p class="process-item-text">I can prototype your app</p>
-              <img
-                src="./images/avatar_3.png"
-                alt="Avatar_3"
-                class="process-image"
-              />
-            </li>
-            <li class="process-list-item">
-              <img
-                src="./images/avatar_4.png"
-                alt="Avatar_4"
-                class="process-image"
-              />
-              <p class="process-item-text">I can help marketing strategy</p>
-            </li>
-          </ul>
+          <div class="process-list">
+            <div class="process-items-first">
+              <div class="process-list-item">
+                <img
+                  src="./images/avatar_1.png"
+                  alt="Avatar_1"
+                  class="process-image"
+                />
+                <p class="process-item-text">I can take care of your pitch</p>
+              </div>
+              <div class="process-list-item">
+                <p class="process-item-text">I can prototype your app</p>
+                <img
+                  src="./images/avatar_3.png"
+                  alt="Avatar_3"
+                  class="process-image"
+                />
+              </div>
+            </div>
+            <div class="process-items-second">
+              <div class="process-list-item">
+                <p class="process-item-text">I can take care of your pitch</p>
+                <img
+                  src="./images/avatar_2.png"
+                  alt="Avatar_2"
+                  class="process-image"
+                />
+              </div>
+              <div class="process-list-item">
+                <img
+                  src="./images/avatar_4.png"
+                  alt="Avatar_4"
+                  class="process-image"
+                />
+                <p class="process-item-text">I can help marketing strategy</p>
+              </div>
+            </div>
+          </div>
           <button type="button" class="process-button">
             Contact our expert
           </button>
@@ -622,7 +690,7 @@
           </form>
         </div>
       </div>
-      <div class="final-text-container container">
+      <div class="final-text-containercontainer">
         <p class="footer-final-text">
           Made With Love By Figmaland All Right Reserved
         </p>
