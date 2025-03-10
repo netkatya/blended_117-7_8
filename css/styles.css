@@ -44,7 +44,6 @@ img {
     height: auto;
 }
 
-
 .container {
     max-width: 411px;
     padding-left: 20px;
@@ -69,6 +68,7 @@ header {
     top: 0;
     z-index: 999;
     background-color: #ffffff;
+    box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
 .nav-header {
@@ -117,6 +117,7 @@ header {
     header {
         padding-top: 22px;
         padding-bottom: 22px;
+        box-shadow: none;
     }
 
     .nav-header-logo {
@@ -152,28 +153,28 @@ header {
             margin-left: auto;
         }
     
-        .nav-header-button {
-            min-width: 113px;
-            padding: 9px 24.65px 9px 24.65px;
-            background-color: #02897a;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 1.5;
-            text-align: center;
-            color: #ffffff;
-            border-radius: 4px;
-            border: 1px solid #02897a;
-            transition-property: background-color;
-            transition-duration: 250ms;
-            transition-timing-function: ease-in-out;
-        }
+    .nav-header-button {
+        min-width: 113px;
+        padding: 9px 24.65px 9px 24.65px;
+        background-color: #02897a;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 4px;
+        border: 1px solid #02897a;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: ease-in-out;
+    }
     
-        .nav-header-button:hover,
-        .nav-header-button:focus {
-            background-color: #ffffff;
-            color: #173a56;
-            border: 1px solid #BCD0E5;
-        }
+    .nav-header-button:hover,
+    .nav-header-button:focus {
+        background-color: #ffffff;
+        color: #173a56;
+        border: 1px solid #BCD0E5;
+    }
 }
 
 .mobile-menu {
@@ -213,40 +214,41 @@ header {
     flex-direction: column;
     height: 100%;
 }
-        .mobile-menu-close {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #fff;
-            border-radius: 50%;
-            border: 1px solid #02897A;
-            width: 24px;
-            height: 24px;
-            padding: 0;
-            margin-bottom: 24px;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            position: absolute;
-            top: 24px;
-            right: 28px;
-        }
+
+.mobile-menu-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #02897A;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin-bottom: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    top: 24px;
+    right: 28px;
+}
     
-        .mobile-menu-close-cross {
-            fill: #02897A;
-            transition-property: fill;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
+.mobile-menu-close-cross {
+    fill: #02897A;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
     
-        .mobile-menu-close:hover,
-        .mobile-menu-close:focus {
-            background-color: #02897A;
-            border: none;
-        }
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
+    background-color: #02897A;
+    border: none;
+}
     
-        .mobile-menu-close:hover .mobile-menu-close-cross,
-        .mobile-menu-close:focus .mobile-menu-close-cross {
-            fill: #fff;
-        }
+.mobile-menu-close:hover .mobile-menu-close-cross,
+.mobile-menu-close:focus .mobile-menu-close-cross {
+    fill: #fff;
+}
 
 .mobile-menu-nav {
     margin-bottom: auto;
@@ -1220,10 +1222,10 @@ header {
         padding-bottom: 50px;
     }
 
-        .price-container {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
+    .price-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     .price-title {
         margin-bottom: 10px;
