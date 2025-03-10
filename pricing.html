@@ -215,24 +215,29 @@
           </div>
         </div>
       </section>
-      <section class="enterprise-section hidden">
-        <h3 class="enterprise-section-name">Enterprise</h3>
-        <h2 class="enterprise-section-title">
-          Are you interested in a custom-tailored plan?
-        </h2>
-        <p class="enterprise-section-text">
-          Product is a set of advanced features for really large teams with
-          projects.
-        </p>
-        <button type="button" class="enterprise-section-button">
-          Get in touch with us
-        </button>
+      <section class="enterprise-section">
+        <div class="enterprise-container container">
+          <h3 class="enterprise-section-name">Enterprise</h3>
+          <h2 class="enterprise-section-title">
+            Are you interested in a custom tailored plan?
+          </h2>
+          <p class="enterprise-section-text">
+            Product is a set of advanced features for really large teams with
+            projects.
+          </p>
+          <button type="button" class="enterprise-section-button">
+            Get in touch with us
+          </button>
+        </div>
       </section>
-      <section class="features-section hidden">
+      <section class="features-section">
         <div class="container features-container">
           <h2 class="features-container-title">
             Product is being used with great effects alongside:
           </h2>
+          <svg width="352" height="288" class="features-container-picture-mob">
+            <use href="./images/icons.svg#icon-features-mob"></use>
+          </svg>
           <div class="features-container-content">
             <svg width="528" height="392" class="feature-container-picture">
               <use href="./images/icons.svg#icon-product"></use>
@@ -290,7 +295,7 @@
           </div>
         </div>
       </section>
-      <section class="questions hidden" id="FAQ">
+      <section class="questions" id="FAQ">
         <div class="container questions-container">
           <h2 class="questions-title">Frequently asked question</h2>
           <p class="questions-text">
@@ -356,19 +361,19 @@
           </ul>
         </div>
       </section>
-      <section class="promo hidden">
-        <div class="container promo-container">
+      <section class="promo">
+        <div class="promo-container">
           <div class="ptomo-text-button">
             <h2 class="promo-container-text">
               Join 100 Compannies who boost their business with Product
             </h2>
             <button type="button" class="promo-button">Get This</button>
           </div>
-          <img src="./images/graphics.png" alt="Graphics" />
+          <img src="./images/graphics.png" alt="Graphics" class="promo-image" />
         </div>
       </section>
     </main>
-    <footer class="footer hidden">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-social">
           <a href="./index.html" class="footer-logo"
@@ -454,9 +459,11 @@
           </form>
         </div>
       </div>
-      <p class="footer-final-text">
-        Made With Love By Figmaland All Right Reserved
-      </p>
+      <div class="final-text-container container">
+        <p class="footer-final-text">
+          Made With Love By Figmaland All Right Reserved
+        </p>
+      </div>
     </footer>
   </body>
 </html>
