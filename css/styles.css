@@ -215,6 +215,24 @@ header {
     height: 100%;
 }
 
+.menu-header-logo {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 93%;
+    color: #173a56;
+}
+
+.logo-image {
+    width: 39px;
+    height: 36px;
+    margin-right: 16px;
+}
+
 .mobile-menu-close {
     display: flex;
     justify-content: center;
@@ -260,6 +278,7 @@ header {
     flex-direction: column;
     gap: 40px;
     margin: 0;
+    margin-top: 40px;
 }
 
 .mobile-menu-nav-list-item {

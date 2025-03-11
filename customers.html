@@ -32,13 +32,13 @@
             />Product</a
           >
           <ul class="nav-header-list">
-            <li class="nav-header-list-item current">
+            <li class="nav-header-list-item">
               <a href="./index.html">Product</a>
             </li>
             <li class="nav-header-list-item">
               <a href="./pricing.html">Pricing</a>
             </li>
-            <li class="nav-header-list-item">
+            <li class="nav-header-list-item current">
               <a href="./customers.html">Customers</a>
             </li>
             <li class="nav-header-list-item"><a href="">Resources</a></li>
@@ -60,11 +60,20 @@
       </div>
       <div class="mobile-menu">
         <div class="container mobile-menu-container">
-          <button type="button" class="mobile-menu-close">
-            <svg width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
+          <div class="logo-button">
+            <a class="menu-header-logo" href="./index.html"
+              ><img
+                src="./images/logo.png"
+                alt="Logo"
+                class="logo-image"
+              />Product</a
+            >
+            <button type="button" class="mobile-menu-close">
+              <svg width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
           <nav class="mobile-menu-nav">
             <ul class="mobile-menu-nav-list">
               <li class="mobile-menu-nav-list-item">
@@ -159,7 +168,7 @@
           </ul>
         </div>
       </section>
-      <section class="benefits hidden">
+      <section class="benefits">
         <div class="container">
           <h2 class="benefits-title">Why Choose Product?</h2>
           <ul class="benefits-list">
@@ -205,7 +214,7 @@
           </ul>
         </div>
       </section>
-      <section class="product-section hidden">
+      <section class="product-section">
         <div class="container product-container">
           <h2 class="product-section-title">How Product Work?</h2>
           <ul class="product-section-list">
@@ -226,7 +235,7 @@
                 </p>
               </div>
             </li>
-            <li class="product-section-list-item">
+            <li class="product-section-list-item step-two">
               <div class="product-step-wraper product-step-two-wraper">
                 <h4 class="product-section-list-step">Step 2</h4>
                 <h3 class="product-section-list-title">Pay fully refundable</h3>
@@ -263,7 +272,7 @@
           </button>
         </div>
       </section>
-      <section class="join-container hidden">
+      <section class="join-container">
         <h2 class="join-title">
           Join thousand of other who have already received offers
         </h2>
@@ -298,19 +307,19 @@
           </li>
         </ul>
       </section>
-      <section class="promo hidden">
-        <div class="container promo-container">
+      <section class="promo">
+        <div class="promo-container">
           <div class="ptomo-text-button">
             <h2 class="promo-container-text">
               Join 100 Compannies who boost their business with Product
             </h2>
             <button type="button" class="promo-button">Get This</button>
           </div>
-          <img src="./images/graphics.png" alt="Graphics" />
+          <img src="./images/graphics.png" alt="Graphics" class="promo-image" />
         </div>
       </section>
     </main>
-    <footer class="footer hidden">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-social">
           <a href="./index.html" class="footer-logo"
@@ -396,9 +405,11 @@
           </form>
         </div>
       </div>
-      <p class="footer-final-text">
-        Made With Love By Figmaland All Right Reserved
-      </p>
+      <div class="final-text-container container">
+        <p class="footer-final-text">
+          Made With Love By Figmaland All Right Reserved
+        </p>
+      </div>
     </footer>
   </body>
 </html>
