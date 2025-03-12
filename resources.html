@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customers</title>
+    <title>Resources</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/customers.css" />
+    <link rel="stylesheet" href="./css/resources.css" />
     <script src="script.js"></script>
   </head>
   <body>
@@ -38,10 +38,10 @@
             <li class="nav-header-list-item">
               <a href="./pricing.html">Pricing</a>
             </li>
-            <li class="nav-header-list-item current">
+            <li class="nav-header-list-item">
               <a href="./customers.html">Customers</a>
             </li>
-            <li class="nav-header-list-item">
+            <li class="nav-header-list-item current">
               <a href="./resources.html">Resources</a>
             </li>
           </ul>
@@ -135,190 +135,177 @@
       </div>
     </header>
     <main>
-      <section class="clients">
-        <div class="container clients-container">
-          <h1 class="clients-container-title">Our Clients</h1>
-          <ul class="clients-container-list">
-            <li class="clients-container-list-item">
-              <a href="https://www.airbnb.co.uk/" target="_blank">
-                <svg width="159" height="50">
-                  <use href="./images/icons.svg#icon-Airbnb-Logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-container-list-item">
-              <a href="https://www.google.co.uk/" target="_blank">
-                <svg width="146" height="50">
-                  <use href="./images/icons.svg#icon-Google-Logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-container-list-item">
-              <a href="https://www.microsoft.com/" target="_blank">
-                <svg width="213" height="44" class="client-picture">
-                  <use href="./images/icons.svg#icon-Microsoft-Logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-container-list-item">
-              <a href="https://www.fedex.com/" target="_blank">
-                <svg width="140" height="42">
-                  <use href="./images/icons.svg#icon-FedEx-Logo"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="benefits">
-        <div class="container">
-          <h2 class="benefits-title">Why Choose Product?</h2>
-          <ul class="benefits-list">
-            <li class="benefits-list-item">
-              <div class="benefits-list-icon benefits-list-icon-cursor">
-                <svg width="12" height="18" class="icon-cursor">
-                  <use href="./images/icons.svg#icon-cursor"></use>
-                </svg>
+      <section class="business">
+        <div class="container business-container">
+          <div class="business-content">
+            <h2 class="business-title">Great Business made with Product.</h2>
+            <p class="business-text">
+              Build better customer relationships easily messaging that provides
+              a more personal experience for you and your customers.
+            </p>
+            <div></div>
+            <form class="business-form">
+              <div class="bussines-form-wrapper">
+                <input
+                  type="email"
+                  name="business-form"
+                  class="business-form-input"
+                  placeholder="Enter your email adress"
+                />
+                <button class="business-form-button">Join Now</button>
               </div>
-              <h3 class="benefits-list-item-title">Special Business</h3>
-              <p class="benefits-list-item-text">
-                Product helps you see how many more days you need to work <br />
-                to reach your financial goal <br />
-                for the month and year.
-              </p>
-            </li>
-            <li class="benefits-list-item">
-              <div class="benefits-list-icon benefits-list-icon-wave">
-                <svg width="18" height="18" class="icon-wave">
-                  <use href="./images/icons.svg#icon-wave"></use>
-                </svg>
-              </div>
-              <h3 class="benefits-list-item-title">Instant Result</h3>
-              <p class="benefits-list-item-text">
-                Product helps you see how many more days you need to work<br />
-                to reach your financial goal <br />
-                for the month and year.
-              </p>
-            </li>
-            <li class="benefits-list-item">
-              <div class="benefits-list-icon benefits-list-icon-heard">
-                <svg width="16" height="18" class="icon-heard">
-                  <use href="./images/icons.svg#icon-heard"></use>
-                </svg>
-              </div>
-              <h3 class="benefits-list-item-title">Fastest way to organize</h3>
-              <p class="benefits-list-item-text">
-                Product helps you see how many more days you need to work<br />
-                to reach your financial goal<br />
-                for the month and year.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="product-section">
-        <div class="container product-container">
-          <h2 class="product-section-title">How Product Work?</h2>
-          <ul class="product-section-list">
-            <li class="product-section-list-item">
+            </form>
+            <div class="business-join">
               <img
-                src="./images/mac1.png"
-                alt="Laptop1"
-                class="product-section-picture"
+                srcset="./images/busin-photos.png, ./images/busin-photos@2x.png"
+                alt="folovers"
+                class="business-photos"
               />
-              <div class="product-step-wraper product-step-one-wraper">
-                <h4 class="product-section-list-step">Step 1</h4>
-                <h3 class="product-section-list-title">Apply for a product</h3>
-                <p class="product-section-list-text">
-                  Completing our easy step-by-step application form gives you
-                  access to multiple business with multiple products. We analyse
-                  your business through our proprietary credit analysis
-                  technology
-                </p>
-              </div>
-            </li>
-            <li class="product-section-list-item step-two">
-              <div class="product-step-wraper product-step-two-wraper">
-                <h4 class="product-section-list-step">Step 2</h4>
-                <h3 class="product-section-list-title">Pay fully refundable</h3>
-                <p class="product-section-list-text">
-                  Product will contactting you instantly to receive payment of
-                  the Application Fee. if no offer of product is available, your
-                  fee will be fully refunded.
-                </p>
-              </div>
-              <img
-                src="./images/mac2.png"
-                alt="Laptop2"
-                class="product-section-picture"
-              />
-            </li>
-            <li class="product-section-list-item">
-              <img
-                src="./images/mac3.png"
-                alt="Laptop3"
-                class="product-section-picture"
-              />
-              <div class="product-step-wraper product-step-three-wraper">
-                <h4 class="product-section-list-step">Step 3</h4>
-                <h3 class="product-section-list-title">Completion</h3>
-                <p class="product-section-list-text">
-                  Product will continue to liase between borrower and manager to
-                  procees and complete a quick and efficient settlement
-                </p>
-              </div>
-            </li>
-          </ul>
-          <button type="button" class="product-button">
-            Get in touch with us
-          </button>
-        </div>
-      </section>
-      <section class="join-container">
-        <h2 class="join-title">
-          Join thousand of other who have already received offers
-        </h2>
-        <ul class="join-list">
-          <li>
-            <img
-              src="./images/Enterprise.png"
-              alt="Red Icon"
-              class="join-picture"
-            />
-            <h3 class="join-list-item-title">Business</h3>
-            <ul class="join-lils-item-list">
-              <li>Cash Flow</li>
-              <li>Asset Backed</li>
-              <li>Receivables Finance</li>
-            </ul>
-            <p class="join-list-item-text">Find the best business product</p>
-          </li>
-          <li>
-            <img
-              src="./images/Business.png"
-              alt="Blue Icon"
-              class="join-picture"
-            />
-            <h3 class="join-list-item-title">Enterprise</h3>
-            <ul class="join-lils-item-list">
-              <li>Site Acquisition</li>
-              <li>Bridge</li>
-              <li>Development Financing</li>
-            </ul>
-            <p class="join-list-item-text">Find the best business product</p>
-          </li>
-        </ul>
-      </section>
-      <section class="promo">
-        <div class="promo-container">
-          <div class="ptomo-text-button">
-            <h2 class="promo-container-text">
-              Join 100 Compannies who boost their business with Product
-            </h2>
-            <button type="button" class="promo-button">Get This</button>
+              <p>Join over <span class="business-span">4,000</span>+ other</p>
+            </div>
           </div>
-          <img src="./images/graphics.png" alt="Graphics" class="promo-image" />
+          <picture>
+            <source
+              srcset="./images/busin-desk.png 1x, ./images/busin-desk@2x.png 2x"
+              media="(min-width: 768px)"
+              class="business-desk-picture"
+            />
+            <source
+              srcset="
+                ./images/busin-mobile.png    1x,
+                ./images/busin-mobile@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img src="./images/busin-desk.png" alt="black-screenshot" />
+          </picture>
         </div>
+      </section>
+      <section class="stories">
+        <div class="container stories-container">
+          <h2 class="stories-title">Latest Stories</h2>
+          <p class="stories-text">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+          <ul class="stories-list">
+            <li class="stories-list-item">
+              <img src="" alt="" />
+              <div class="stories-item-content">
+                <p class="stories-list-item-text">
+                  By Wahid Ari | 03 March 2019
+                </p>
+                <h3 class="stories-list-item-title">
+                  Increasing Prosperity With Positive Thinking
+                </h3>
+              </div>
+            </li>
+            <li class="stories-list-item">
+              <img src="" alt="" />
+              <div class="stories-item-content">
+                <p class="stories-list-item-text">
+                  By Wahid Ari | 03 March 2019
+                </p>
+                <h3 class="stories-list-item-title">
+                  Motivation Is The First Step To Success
+                </h3>
+              </div>
+            </li>
+            <li class="stories-list-item">
+              <img src="" alt="" />
+              <div class="stories-item-content">
+                <p class="stories-list-item-text">
+                  By Wahid Ari | 03 March 2019
+                </p>
+                <h3 class="stories-list-item-title">
+                  Success Steps For Your Personal Or Business
+                </h3>
+              </div>
+            </li>
+            <li class="stories-list-item">
+              <img src="" alt="" />
+              <div class="stories-item-content">
+                <p class="stories-list-item-text">
+                  By Wahid Ari | 03 March 2019
+                </p>
+                <h3 class="stories-list-item-title">
+                  Increasing Prosperity With Positive Thinking
+                </h3>
+              </div>
+            </li>
+            <li class="stories-list-item">
+              <img src="" alt="" />
+              <div class="stories-item-content">
+                <p class="stories-list-item-text">
+                  By Wahid Ari | 03 March 2019
+                </p>
+                <h3 class="stories-list-item-title">
+                  Motivation Is The First Step To Success
+                </h3>
+              </div>
+            </li>
+            <li class="stories-list-item">
+              <img src="" alt="" />
+              <div class="stories-item-content">
+                <p class="stories-list-item-text">
+                  By Wahid Ari | 03 March 2019
+                </p>
+                <h3 class="stories-list-item-title">
+                  Success Steps For Your Personal Or Business
+                </h3>
+              </div>
+            </li>
+          </ul>
+          <a href="" class="stories-link"
+            >More Stories
+            <svg>
+              <use></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="contact">
+        <div>
+          <h2>Contact Us</h2>
+          <p>Need more detailed information? Get in touch with us.</p>
+          <ul>
+            <li>
+              <a href="">
+                <svg>
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg>
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg>
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <picture>
+              <source />
+              <source />
+              <img src="" alt="" />
+            </picture>
+          </ul>
+        </div>
+      </section>
+      <section class="form">
+        <h2>Send a message</h2>
+        <form>
+          <input type="text" />
+          <input type="email" />
+          <textaria></textaria>
+          <button>Send</button>
+        </form>
       </section>
     </main>
     <footer class="footer">
