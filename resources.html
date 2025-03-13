@@ -53,6 +53,11 @@
               <button type="button" class="nav-header-button">Sign Up</button>
             </li>
           </ul>
+          <button class="header-theme-button" id="theme-toggle">
+            <svg width="32" height="32" class="theme-button">
+              <use href="./images/icons.svg#icon-theme"></use>
+            </svg>
+          </button>
           <button class="menu-button">
             <svg width="28" height="31" class="menu-icon">
               <use href="./images/icons.svg#icon-menu"></use>
@@ -88,7 +93,7 @@
                 <a href="./customers.html">Customers</a>
               </li>
               <li class="mobile-menu-nav-list-item">
-                <a href="">Resources</a>
+                <a href="./resources.html">Resources</a>
               </li>
             </ul>
           </nav>
@@ -161,7 +166,10 @@
                 alt="folovers"
                 class="business-photos"
               />
-              <p>Join over <span class="business-span">4,000</span>+ other</p>
+              <p>
+                Join over <span><a href="" class="business-span">4,000</a></span
+                >+ other
+              </p>
             </div>
           </div>
           <picture>
@@ -190,122 +198,198 @@
           </p>
           <ul class="stories-list">
             <li class="stories-list-item">
-              <img src="" alt="" />
+              <img
+                srcset="
+                  ./images/stories-one.jpg    1x,
+                  ./images/stories-one@2x.jpg 2x
+                "
+                alt="Laptops"
+                class="stories-picture"
+              />
               <div class="stories-item-content">
                 <p class="stories-list-item-text">
-                  By Wahid Ari | 03 March 2019
+                  By <span class="span-bold">Wahid Ari</span> | 03 March 2019
                 </p>
-                <h3 class="stories-list-item-title">
+                <a href="" class="stories-list-item-title">
                   Increasing Prosperity With Positive Thinking
-                </h3>
+                </a>
               </div>
             </li>
             <li class="stories-list-item">
-              <img src="" alt="" />
+              <img
+                srcset="
+                  ./images/stories-two.jpg    1x,
+                  ./images/stories-two@2x.jpg 2x
+                "
+                alt="Presentation"
+              />
               <div class="stories-item-content">
                 <p class="stories-list-item-text">
-                  By Wahid Ari | 03 March 2019
+                  By <span class="span-bold">Wahid Ari</span> | 03 March 2019
                 </p>
-                <h3 class="stories-list-item-title">
+                <a href="" class="stories-list-item-title">
                   Motivation Is The First Step To Success
-                </h3>
+                </a>
               </div>
             </li>
             <li class="stories-list-item">
-              <img src="" alt="" />
+              <img
+                srcset="
+                  ./images/stories-three.jpg    1x,
+                  ./images/stories-three@2x.jpg 2x
+                "
+                alt="Suit"
+              />
               <div class="stories-item-content">
                 <p class="stories-list-item-text">
-                  By Wahid Ari | 03 March 2019
+                  By <span class="span-bold">Wahid Ari</span> | 03 March 2019
                 </p>
-                <h3 class="stories-list-item-title">
+                <a href="" class="stories-list-item-title">
                   Success Steps For Your Personal Or Business
-                </h3>
+                </a>
               </div>
             </li>
             <li class="stories-list-item">
-              <img src="" alt="" />
+              <img
+                srcset="
+                  ./images/stories-four.jpg    1x,
+                  ./images/stories-four@2x.jpg 2x
+                "
+                alt="Laptop"
+              />
               <div class="stories-item-content">
                 <p class="stories-list-item-text">
-                  By Wahid Ari | 03 March 2019
+                  By <span class="span-bold">Wahid Ari</span> | 03 March 2019
                 </p>
-                <h3 class="stories-list-item-title">
+                <a href="" class="stories-list-item-title">
                   Increasing Prosperity With Positive Thinking
-                </h3>
+                </a>
               </div>
             </li>
             <li class="stories-list-item">
-              <img src="" alt="" />
+              <img
+                srcset="
+                  ./images/stories-five.jpg    1x,
+                  ./images/stories-five@2x.jpg 2x
+                "
+                alt="Laptop"
+              />
               <div class="stories-item-content">
                 <p class="stories-list-item-text">
-                  By Wahid Ari | 03 March 2019
+                  By <span class="span-bold">Wahid Ari</span> | 03 March 2019
                 </p>
-                <h3 class="stories-list-item-title">
+                <a href="" class="stories-list-item-title">
                   Motivation Is The First Step To Success
-                </h3>
+                </a>
               </div>
             </li>
             <li class="stories-list-item">
-              <img src="" alt="" />
+              <img
+                srcset="
+                  ./images/stories-six.jpg    1x,
+                  ./images/stories-six@2x.jpg 2x
+                "
+                alt="Laptop"
+              />
               <div class="stories-item-content">
                 <p class="stories-list-item-text">
-                  By Wahid Ari | 03 March 2019
+                  By <span class="span-bold">Wahid Ari</span> | 03 March 2019
                 </p>
-                <h3 class="stories-list-item-title">
+                <a href="" class="stories-list-item-title">
                   Success Steps For Your Personal Or Business
-                </h3>
+                </a>
               </div>
             </li>
           </ul>
           <a href="" class="stories-link"
             >More Stories
-            <svg>
-              <use></use>
+            <svg width="20" height="20" class="stories-link-icon">
+              <use href="./images/icons.svg#icon-circle_right"></use>
             </svg>
           </a>
         </div>
       </section>
       <section class="contact">
-        <div>
-          <h2>Contact Us</h2>
-          <p>Need more detailed information? Get in touch with us.</p>
-          <ul>
-            <li>
-              <a href="">
-                <svg>
-                  <use></use>
+        <div class="container contact-container">
+          <h2 class="contact-title">Contact Us</h2>
+          <p class="contact-text">
+            Need more detailed information? Get in touch with us.
+          </p>
+          <ul class="footer-social-media contacts-social-list">
+            <li class="contacts-social-media-item">
+              <a
+                href="https://www.instagram.com/"
+                class="footer-social-media-link"
+                target="_blank"
+              >
+                <svg width="30" height="30" class="footer-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="">
-                <svg>
-                  <use></use>
+            <li class="contacts-social-media-item">
+              <a
+                href="https://www.facebook.com/"
+                class="footer-social-media-link"
+                target="_blank"
+              >
+                <svg width="30" height="30" class="footer-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="">
-                <svg>
-                  <use></use>
+            <li class="contacts-social-media-item">
+              <a
+                href="https://twitter.com"
+                class="footer-social-media-link"
+                target="_blank"
+              >
+                <svg width="30" height="30" class="footer-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <picture>
-              <source />
-              <source />
-              <img src="" alt="" />
-            </picture>
           </ul>
+          <picture class="map">
+            <source
+              srcset="./images/map-desk.jpg 1x, ./images/map-desk@2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./images/map-mob.jpg 1x, ./images/map-mob@2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img src="./images/map-desk.jpg" alt="Map" />
+          </picture>
+          <div class="form">
+            <h2 class="form-title">Send a message</h2>
+            <form class="contact-form">
+              <input
+                type="text"
+                name="username"
+                class="form-input"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="user-email"
+                class="form-input"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="user-text"
+                rows="10"
+                cols="10"
+                class="form-textarea"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button class="form-button">Send</button>
+            </form>
+          </div>
         </div>
-      </section>
-      <section class="form">
-        <h2>Send a message</h2>
-        <form>
-          <input type="text" />
-          <input type="email" />
-          <textaria></textaria>
-          <button>Send</button>
-        </form>
       </section>
     </main>
     <footer class="footer">

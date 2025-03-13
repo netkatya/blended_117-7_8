@@ -6,8 +6,30 @@ body {
     background-color: #ffffff;
     font-size: 16px;
     font-family: "Poppins", serif;
-    color: #22343d
+    color: #22343d;
+    transition: background-color 0.3s ease,
+        color 0.3s ease;
 }
+
+body.dark-theme {
+    background-color: #1F2E35;
+    color: #fff;
+}
+
+/*header {
+    background-color: #fff;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-theme header {
+    background-color: #22343d;
+    color: #fff;
+}
+
+body.dark-theme a {
+    color: #fff;
+} */
 
 h1,
 h2,
@@ -100,6 +122,19 @@ header {
     display: none;
 }
 
+.header-theme-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    margin-right: 24px;
+}
+
+.theme-button {
+    width: 32px;
+    height: 32px;
+}
+
 .menu-button {
     background-color: transparent;
     padding: 0;
@@ -175,6 +210,11 @@ header {
         color: #173a56;
         border: 1px solid #BCD0E5;
     }
+
+   .header-theme-button {
+       margin-right: 0;
+       margin-left: 24px;
+   }
 }
 
 .mobile-menu {
@@ -1015,6 +1055,11 @@ header {
     line-height: 162%;
     text-align: center;
     margin-bottom: 40px;
+    color: #22343d;
+}
+
+.strategy-section-list-item {
+    background-color: #fff;
 }
 
 .strategy-section-list-item:hover .strategy-section-list-item-title,
