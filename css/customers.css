@@ -16,6 +16,21 @@ body.dark-theme {
     color: #fff;
 }
 
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-theme header {
+    background-color: #22343d;
+    color: #fff;
+}
+
+body.dark-theme a {
+    color: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -129,6 +144,10 @@ header {
     stroke: #173A56;
 }
 
+body.dark-theme .menu-icon {
+    stroke: #fff
+}
+
 @media screen and (min-width:768px) {
     .menu-button {
         display: none;
@@ -214,6 +233,10 @@ header {
     pointer-events: none;
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(-100%);
+}
+
+body.dark-theme .mobile-menu {
+    background-color: #22343d;
 }
 
 .mobile-menu.open {
@@ -428,6 +451,10 @@ header {
     padding-bottom: 61px;
 }
 
+body.dark-theme .benefits {
+    background-color: #22343d;
+}
+
 .benefits-title {
     font-weight: 700;
     font-size: 32px;
@@ -527,6 +554,10 @@ header {
     font-size: 32px;
     text-align: center;
     margin-bottom: 79px;
+    color: #22343d;
+}
+body.dark-theme .product-section-title {
+    color: #fff;
 }
 
 .product-section-picture {

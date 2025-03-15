@@ -16,7 +16,20 @@ body.dark-theme {
     color: #fff;
 }
 
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
 
+body.dark-theme header {
+    background-color: #22343d;
+    color: #fff;
+}
+
+body.dark-theme a {
+    color: #fff;
+}
 
 h1,
 h2,
@@ -153,6 +166,10 @@ header {
     stroke: #173A56;
 }
 
+body.dark-theme .menu-icon {
+    stroke: #fff
+}
+
 @media screen and (min-width:768px) {
     .menu-button {
         display: none;
@@ -238,6 +255,10 @@ header {
     pointer-events: none;
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(-100%);
+}
+
+body.dark-theme .mobile-menu {
+    background-color: #22343d;
 }
 
 .mobile-menu.open {
@@ -581,6 +602,16 @@ header {
     font-weight: 700;
     font-size: 24px;
     line-height: 167%;
+    color: #22343d;
+}
+
+body.dark-theme .stories-list-item-title {
+    color: #22343d;
+}
+
+body.dark-theme .stories-list-item-title:hover,
+body.dark-theme .stories-list-item-title:focus {
+    color: #02897A;
 }
 
 .stories-list-item-title:hover,
@@ -598,10 +629,15 @@ header {
     align-items: center;
     margin-top: 50px;
     justify-content: center;
+    color: #22343d;
 }
 
 .stories-link-icon {
     fill: #2E3A59;
+}
+
+body.dark-theme .stories-link-icon {
+    fill: #fff;
 }
 
 .stories-link:hover,
@@ -668,6 +704,10 @@ header {
     margin-bottom: 24px;
 }
 
+body.dark-theme .contact-title {
+    color: #fff;
+}
+
 .contact-text {
     font-weight: 500;
     font-size: 18px;
@@ -677,6 +717,10 @@ header {
     color: #374754;
     max-width: 335px;
     margin: 0 auto;
+}
+
+body.dark-theme .contact-text {
+    color: #fff;
 }
 
 .contacts-social-list {
@@ -725,6 +769,10 @@ header {
     color: #252b42;
     text-align: center;
     margin-bottom: 32px;
+}
+
+body.dark-theme .form-title {
+    color: #fff;
 }
 
 .contact-form {

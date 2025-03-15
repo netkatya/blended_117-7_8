@@ -16,7 +16,8 @@ body.dark-theme {
     color: #fff;
 }
 
-/*header {
+
+header {
     background-color: #fff;
     padding: 10px 0;
     transition: background-color 0.3s ease;
@@ -29,7 +30,7 @@ body.dark-theme header {
 
 body.dark-theme a {
     color: #fff;
-} */
+} 
 
 h1,
 h2,
@@ -144,6 +145,10 @@ header {
     stroke: #173A56; 
 }
 
+body.dark-theme .menu-icon {
+    stroke: #fff
+}
+
 @media screen and (min-width:768px) {
     .menu-button {
         display: none;
@@ -229,6 +234,10 @@ header {
     pointer-events: none;
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(-100%);
+}
+
+body.dark-theme .mobile-menu{
+    background-color: #22343d;
 }
     
 .mobile-menu.open {
@@ -967,6 +976,7 @@ header {
     font-size: 16px;
     text-align: center;
     color: #2f281e;
+    background-color: #fff;
 }
 
 .process-list-item:hover {
@@ -1022,6 +1032,10 @@ header {
         justify-content: center;
     }
 
+    .process-list-item {
+        gap: 16px;
+    }
+
     .process-items-first {
         display: flex;
         flex-direction: column;
@@ -1055,11 +1069,12 @@ header {
     line-height: 162%;
     text-align: center;
     margin-bottom: 40px;
-    color: #22343d;
 }
 
 .strategy-section-list-item {
     background-color: #fff;
+    color: #22343d;
+    overflow: hidden;
 }
 
 .strategy-section-list-item:hover .strategy-section-list-item-title,
@@ -1090,6 +1105,13 @@ header {
 .strategy-section-list-item:not(:last-child) {
     margin-bottom: 56px;
 }
+
+ .strategy-item-text-together {
+     padding-top: 24px;
+     padding-left: 27px;
+     padding-right: 27px;
+     padding-bottom: 40px;
+ }
 
 @media screen and (min-width:768px) {
     .strategies-section {
@@ -1125,13 +1147,6 @@ header {
     .strategies-section-picture {
         margin-bottom: 0;
     }
-
-    .strategy-item-text-together {
-        padding-top: 24px;
-        padding-left: 27px;
-        padding-right: 27px;
-        padding-bottom: 40px;
-    }
 }
 
 .price {
@@ -1158,13 +1173,14 @@ header {
 
 .price-item {
     padding: 32px 0;
-    width: calc((100% - 144px) / 3);
     text-align: center;
     font-family: "Montserrat", serif;
     border-radius: 8px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
     cursor: pointer;
     width: 323px;
+    background-color: #fff;
+    color: #22343d;
 }
 
 .price-item:not(:last-child) {
@@ -1177,7 +1193,6 @@ header {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.66667;
-    color: #22343d;
 }
 
 .price-item-text {
@@ -1304,6 +1319,10 @@ header {
         gap: 72px;
     }
 
+    .price-item {
+        width: calc((100% - 144px) / 3);
+    }
+
     .price-item:not(:last-child) {
         margin-bottom: 0px;
     } 
@@ -1341,6 +1360,7 @@ header {
     border: 1px solid #DEDEDE;
     border-radius: 5px;
     width: 327px;
+    background-color: #fff;
 }
 
 .clients-container-list-item:not(:last-child) {
